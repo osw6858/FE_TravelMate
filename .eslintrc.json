@@ -9,6 +9,7 @@
     "plugin:import/errors",
     "plugin:import/warnings",
     "plugin:promise/recommended",
+    "plugin:@tanstack/eslint-plugin-query/recommended",
     "prettier"
   ],
   "plugins": [
@@ -17,12 +18,15 @@
     "jsx-a11y",
     "import",
     "promise",
+    "@tanstack/query",
     "prettier"
   ],
   "rules": {
     "prettier/prettier": "error",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": "off",
+    "@tanstack/query/exhaustive-deps": "error",
+    "@tanstack/query/prefer-query-object-syntax": "error",
     "no-unused-vars": [
       "error",
       {
